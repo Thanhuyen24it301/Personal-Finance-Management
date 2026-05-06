@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB">
+
+    <!-- CONTENT -->
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 🔥 CARD THU CHI -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- THU -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="📥 Thu"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtIncome"
+                        android:text="0 đ"
+                        android:textColor="#4CAF50"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- CHI -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="📤 Chi"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtExpense"
+                        android:text="0 đ"
+                        android:textColor="#F44336"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- BUTTON -->
+            <Button
+                android:id="@+id/btnAdd"
+                android:text="Thêm chi tiêu"
+                android:backgroundTint="#E91E63"
+                android:textColor="#fff"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <!-- LIST -->
+            <ListView
+                android:id="@+id/listView"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- MENU DƯỚI -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingBottom="12dp"
+        android:clipToPadding="false"
+        app:itemIconTint="#E91E63"
+        app:itemTextColor="#E91E63"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>

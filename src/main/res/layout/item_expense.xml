@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_card"
+    android:elevation="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TEXT -->
+    <TextView
+        android:id="@+id/txtItem"
+        android:text="Ăn uống - 50.000đ"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <!-- EDIT -->
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_edit"
+        android:src="@android:drawable/ic_menu_edit"
+        android:clickable="true"
+        android:focusable="false"
+        app:tint="#2196F3"/>
+
+    <!-- DELETE -->
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_delete"
+        android:src="@android:drawable/ic_menu_delete"
+        android:clickable="true"
+        android:focusable="false"
+        app:tint="#F44336"/>
+
+</LinearLayout>

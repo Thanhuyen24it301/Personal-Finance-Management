@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F8F9FB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- CONTENT -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- 🔥 PICK MONTH YEAR -->
+        <TextView
+            android:id="@+id/btnMonthYear"
+            android:text="Tháng 1 / 2026 ▼"
+            android:textSize="15sp"
+            android:textColor="#333"
+            android:padding="8dp"
+            android:background="#EEEEEE"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- SỐ DƯ -->
+        <TextView
+            android:id="@+id/tvBalance"
+            android:text="💰 Số dư: 0 đ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- HẠN MỨC -->
+        <TextView
+            android:id="@+id/tvLimit"
+            android:text="Đã dùng: 0%"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            android:textColor="#666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- PROGRESS -->
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- MENU -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="#E91E63"
+        app:itemTextColor="#E91E63"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>
